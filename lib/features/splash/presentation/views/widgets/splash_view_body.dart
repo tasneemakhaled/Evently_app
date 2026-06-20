@@ -1,5 +1,6 @@
 import 'package:evently_app/core/utils/app_images.dart';
 import 'package:evently_app/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:evently_app/features/onboarding/presentation/views/welcome_view.dart';
 import 'package:flutter/material.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -13,9 +14,9 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(milliseconds: 300), () {
       if (!mounted) return;
-      Navigator.of(context).pushNamed(OnboardingView.route);
+      Navigator.of(context).pushNamed(WelcomeView.route);
     });
   }
 

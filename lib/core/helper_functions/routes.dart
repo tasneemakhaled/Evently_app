@@ -1,4 +1,5 @@
 import 'package:evently_app/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:evently_app/features/onboarding/presentation/views/welcome_view.dart';
 import 'package:evently_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,8 @@ class Routes {
     switch (settings.name) {
       case OnboardingView.route:
         return MaterialPageRoute(builder: (context) => OnboardingView());
-
+      case WelcomeView.route:
+        return MaterialPageRoute(builder: (context) => WelcomeView());
       default:
         return MaterialPageRoute(builder: (context) => SplashView());
     }
