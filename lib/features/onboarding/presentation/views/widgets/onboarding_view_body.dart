@@ -1,3 +1,4 @@
+import 'package:evently_app/core/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingViewBody extends StatelessWidget {
@@ -5,6 +6,10 @@ class OnboardingViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+
+      children: [CustomAppBar()],
+    );
   }
 }

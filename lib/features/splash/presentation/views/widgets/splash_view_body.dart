@@ -13,7 +13,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(minutes: 3), () {
+    Future.delayed(Duration(seconds: 3), () {
       if (!mounted) return;
       Navigator.of(context).pushNamed(OnboardingView.route);
     });
