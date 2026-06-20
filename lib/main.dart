@@ -1,4 +1,6 @@
+import 'package:evently_app/core/helper_functions/routes.dart';
 import 'package:evently_app/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:evently_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +12,11 @@ class EventlyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: Routes.onGenerateRoute,
+
+      initialRoute: SplashView.route,
+    );
   }
 }
