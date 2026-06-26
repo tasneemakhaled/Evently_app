@@ -9,7 +9,11 @@ class WelcomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [CustomAppBar(), Image.asset(Assets.assetsImagesOnboarding1)],
+        children: [
+          CustomAppBar(),
+          Image.asset(Assets.assetsImagesOnboarding1),
+          Text('Personalize Your Experience'),
+        ],
       ),
     );
   }
