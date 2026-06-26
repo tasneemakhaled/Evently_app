@@ -1,5 +1,5 @@
 import 'package:evently_app/core/helper_functions/routes.dart';
-import 'package:evently_app/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +14,7 @@ class EventlyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: AppTextStyles.fontFamily),
       onGenerateRoute: Routes.onGenerateRoute,
 
       initialRoute: SplashView.route,

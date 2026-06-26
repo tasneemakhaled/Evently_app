@@ -1,5 +1,6 @@
 import 'package:evently_app/core/utils/app_images.dart';
-import 'package:evently_app/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:evently_app/core/utils/app_text_styles.dart';
+import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/onboarding/presentation/views/welcome_view.dart';
 import 'package:flutter/material.dart';
 
@@ -32,11 +33,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
           alignment: Alignment.center,
           child: Text(
             'Evently',
-            style: TextStyle(
-              color: Color(0xff5669FF),
-              fontSize: 36,
-              fontWeight: FontWeight.w400,
-            ),
+            style: AppTextStyles.font36Regular.copyWith(color: primaryColor),
           ),
         ),
       ],
