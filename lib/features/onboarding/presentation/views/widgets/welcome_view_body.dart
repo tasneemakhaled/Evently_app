@@ -2,6 +2,7 @@ import 'package:evently_app/core/utils/app_images.dart';
 import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/core/widgets/custom_app_bar.dart';
+import 'package:evently_app/features/auth/presentation/views/login_view.dart';
 import 'package:evently_app/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:evently_app/features/onboarding/presentation/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -94,7 +95,7 @@ class WelcomeViewBody extends StatelessWidget {
           SizedBox(height: 16),
           CustomButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(OnboardingView.route);
+              Navigator.of(context).pushNamed(LoginView.route);
             },
             text: 'Let’s Start',
           ),

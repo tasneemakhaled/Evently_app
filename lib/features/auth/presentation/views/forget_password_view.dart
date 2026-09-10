@@ -1,3 +1,4 @@
+import 'package:evently_app/features/auth/presentation/views/widgets/forget_password_view_body.dart';
 import 'package:flutter/material.dart';
 
 class ForgetPasswordView extends StatelessWidget {
@@ -5,6 +6,6 @@ class ForgetPasswordView extends StatelessWidget {
   static const route = 'forget pass word';
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(body: ForgetPasswordViewBody());
   }
 }
