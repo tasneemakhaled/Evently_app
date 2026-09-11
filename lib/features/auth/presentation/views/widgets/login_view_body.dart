@@ -1,6 +1,8 @@
 import 'package:evently_app/core/utils/app_images.dart';
 import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
+import 'package:evently_app/features/auth/presentation/views/forget_password_view.dart';
+import 'package:evently_app/features/auth/presentation/views/sign_up_view.dart';
 import 'package:evently_app/features/auth/presentation/views/widgets/custom_password_field.dart';
 import 'package:evently_app/features/auth/presentation/views/widgets/custom_text_field.dart';
 import 'package:evently_app/features/auth/presentation/views/widgets/google_login.dart';
@@ -30,9 +32,14 @@ class LoginViewBody extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.bottomRight,
-            child: Text(
-              'Forget Password?',
-              style: AppTextStyles.font16Bold.copyWith(color: primaryColor),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed(ForgetPasswordView.route);
+              },
+              child: Text(
+                'Forget Password?',
+                style: AppTextStyles.font16Bold.copyWith(color: primaryColor),
+              ),
             ),
           ),
           CustomButton(onPressed: () {}, text: 'Login'),
@@ -40,9 +47,16 @@ class LoginViewBody extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Don’t Have Account ?', style: AppTextStyles.font16Medium),
-              Text(
-                ' Create Account',
-                style: AppTextStyles.font16Medium.copyWith(color: primaryColor),
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushNamed(SignUpView.route);
+                },
+                child: Text(
+                  ' Create Account',
+                  style: AppTextStyles.font16Medium.copyWith(
+                    color: primaryColor,
+                  ),
+                ),
               ),
             ],
           ),
