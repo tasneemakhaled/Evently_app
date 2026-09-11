@@ -17,7 +17,11 @@ class LoginViewBody extends StatelessWidget {
           prefixIcon: Icon(Icons.email, color: Color(0xff7B7B7B)),
         ),
         SizedBox(height: 10),
-        CustomPasswordField(),
+        CustomPasswordField(
+          hintText: 'password',
+          prefixIcon: Icon(Icons.lock, color: Color(0xff7B7B7B)),
+          suffixIcon: Icon(Icons.visibility, color: Color(0xff7B7B7B)),
+        ),
       ],
     );
   }
