@@ -6,6 +6,11 @@ class LoginViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [Image.asset(Assets.assetsImagesLogo)]);
+    return Column(
+      children: [
+        Image.asset(Assets.assetsImagesLogo),
+        Image.asset(Assets.assetsImagesEvently),
+      ],
+    );
   }
 }

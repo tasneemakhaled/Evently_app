@@ -2,9 +2,17 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesChangeSetting
+  /// assets/images/change-setting.png
+  static const String assetsImagesChangeSetting = "assets/images/change-setting.png";
+
   /// Assets for assetsImagesEG
   /// assets/images/EG.png
   static const String assetsImagesEG = "assets/images/EG.png";
+
+  /// Assets for assetsImagesEvently
+  /// assets/images/Evently.png
+  static const String assetsImagesEvently = "assets/images/Evently.png";
 
   /// Assets for assetsImagesLR
   /// assets/images/LR.png
