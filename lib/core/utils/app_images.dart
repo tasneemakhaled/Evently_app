@@ -26,6 +26,10 @@ class Assets {
   /// assets/images/logo.png
   static const String assetsImagesLogo = "assets/images/logo.png";
 
+  /// Assets for assetsImagesMapPin
+  /// assets/images/Map_Pin.png
+  static const String assetsImagesMapPin = "assets/images/Map_Pin.png";
+
   /// Assets for assetsImagesMoon
   /// assets/images/Moon.png
   static const String assetsImagesMoon = "assets/images/Moon.png";

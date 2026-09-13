@@ -1,6 +1,7 @@
 import 'package:evently_app/features/auth/presentation/views/forget_password_view.dart';
 import 'package:evently_app/features/auth/presentation/views/login_view.dart';
 import 'package:evently_app/features/auth/presentation/views/sign_up_view.dart';
+import 'package:evently_app/features/home/presentation/views/home_view.dart';
 import 'package:evently_app/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:evently_app/features/onboarding/presentation/views/welcome_view.dart';
 import 'package:evently_app/features/splash/presentation/views/splash_view.dart';
@@ -19,6 +20,8 @@ class Routes {
         return MaterialPageRoute(builder: (context) => SignUpView());
       case ForgetPasswordView.route:
         return MaterialPageRoute(builder: (context) => ForgetPasswordView());
+      case HomeView.route:
+        return MaterialPageRoute(builder: (context) => HomeView());
       default:
         return MaterialPageRoute(builder: (context) => SplashView());
     }

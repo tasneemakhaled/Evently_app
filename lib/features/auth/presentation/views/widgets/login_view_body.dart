@@ -6,6 +6,7 @@ import 'package:evently_app/features/auth/presentation/views/sign_up_view.dart';
 import 'package:evently_app/features/auth/presentation/views/widgets/custom_password_field.dart';
 import 'package:evently_app/features/auth/presentation/views/widgets/custom_text_field.dart';
 import 'package:evently_app/features/auth/presentation/views/widgets/google_login.dart';
+import 'package:evently_app/features/home/presentation/views/home_view.dart';
 import 'package:evently_app/features/onboarding/presentation/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +43,12 @@ class LoginViewBody extends StatelessWidget {
               ),
             ),
           ),
-          CustomButton(onPressed: () {}, text: 'Login'),
+          CustomButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed(HomeView.route);
+            },
+            text: 'Login',
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
