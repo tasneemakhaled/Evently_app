@@ -1,6 +1,7 @@
 import 'package:evently_app/core/utils/app_images.dart';
 import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
+import 'package:evently_app/features/home/presentation/views/widgets/custom_tab_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeHeader extends StatelessWidget {
@@ -62,6 +63,7 @@ class HomeHeader extends StatelessWidget {
               ),
             ],
           ),
+          // CustomTabBar(),
         ],
       ),
     );
