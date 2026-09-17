@@ -56,7 +56,7 @@ class HomeHeader extends StatelessWidget {
           ),
           Row(
             children: [
-              Image.asset(Assets.assetsImagesMapPin),
+              Image.asset(Assets.assetsImagesMapPinOutlined),
               Text(
                 'Cairo , Egypt',
                 style: AppTextStyles.font14Medium.copyWith(color: Colors.white),
