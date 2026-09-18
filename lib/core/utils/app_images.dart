@@ -2,9 +2,21 @@
 class Assets {
   Assets._();
   
-  /// Assets for assetsImagesBike
-  /// assets/images/bike.png
-  static const String assetsImagesBike = "assets/images/bike.png";
+  /// Assets for assetsImagesBikeFilled
+  /// assets/images/bike_filled.png
+  static const String assetsImagesBikeFilled = "assets/images/bike_filled.png";
+
+  /// Assets for assetsImagesBikeOutlined
+  /// assets/images/bike_outlined.png
+  static const String assetsImagesBikeOutlined = "assets/images/bike_outlined.png";
+
+  /// Assets for assetsImagesBirthdayFilled
+  /// assets/images/birthday_filled.png
+  static const String assetsImagesBirthdayFilled = "assets/images/birthday_filled.png";
+
+  /// Assets for assetsImagesBirthdayOutlined
+  /// assets/images/birthday_outlined.png
+  static const String assetsImagesBirthdayOutlined = "assets/images/birthday_outlined.png";
 
   /// Assets for assetsImagesBookOpenFilled
   /// assets/images/book_open_filled.png
@@ -13,10 +25,6 @@ class Assets {
   /// Assets for assetsImagesBookOpenOutlined
   /// assets/images/book_open_outlined.png
   static const String assetsImagesBookOpenOutlined = "assets/images/book_open_outlined.png";
-
-  /// Assets for assetsImagesCake
-  /// assets/images/cake.png
-  static const String assetsImagesCake = "assets/images/cake.png";
 
   /// Assets for assetsImagesChangeSetting
   /// assets/images/change-setting.png
@@ -53,14 +61,6 @@ class Assets {
   /// Assets for assetsImagesHungry
   /// assets/images/Hungry.png
   static const String assetsImagesHungry = "assets/images/Hungry.png";
-
-  /// Assets for assetsImagesIconFilled
-  /// assets/images/icon_filled.png
-  static const String assetsImagesIconFilled = "assets/images/icon_filled.png";
-
-  /// Assets for assetsImagesIconOutlined
-  /// assets/images/icon_outlined.png
-  static const String assetsImagesIconOutlined = "assets/images/icon_outlined.png";
 
   /// Assets for assetsImagesKnowledge
   /// assets/images/Knowledge.png

@@ -63,7 +63,7 @@ class HomeHeader extends StatelessWidget {
               ),
             ],
           ),
-          // CustomTabBar(),
+          CustomTabBar(),
         ],
       ),
     );
