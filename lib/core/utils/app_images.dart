@@ -22,9 +22,9 @@ class Assets {
   /// assets/images/book_open_filled.png
   static const String assetsImagesBookOpenFilled = "assets/images/book_open_filled.png";
 
-  /// Assets for assetsImagesBookOpenOutlined
-  /// assets/images/book_open_outlined.png
-  static const String assetsImagesBookOpenOutlined = "assets/images/book_open_outlined.png";
+  /// Assets for assetsImagesBookOpenOutlined 
+  /// assets/images/book_open_outlined .png
+  static const String assetsImagesBookOpenOutlined  = "assets/images/book_open_outlined .png";
 
   /// Assets for assetsImagesChangeSetting
   /// assets/images/change-setting.png

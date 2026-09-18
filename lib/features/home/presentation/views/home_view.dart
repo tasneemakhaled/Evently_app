@@ -7,9 +7,12 @@ class HomeView extends StatelessWidget {
   static const route = 'home view';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: CustomHomeNavBar(),
-      body: SafeArea(child: HomeViewBody()),
+    return DefaultTabController(
+      length: 4,
+      child: Scaffold(
+        bottomNavigationBar: CustomHomeNavBar(),
+        body: SafeArea(child: HomeViewBody()),
+      ),
     );
   }
 }
