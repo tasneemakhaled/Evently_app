@@ -1,12 +1,18 @@
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/custom_bottom_app_bar.dart';
-import 'package:evently_app/features/home/presentation/views/widgets/custom_home_nav_bar.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
-class HomeView extends StatelessWidget {
+class HomeView extends StatefulWidget {
   const HomeView({super.key});
   static const route = 'home view';
+
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -14,12 +20,21 @@ class HomeView extends StatelessWidget {
       child: Scaffold(
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
-          shape: CircleBorder(),
+          shape: CircleBorder(
+            side: BorderSide(color: Color(0xffF2FEFF), width: 5),
+          ),
           backgroundColor: primaryColor,
           onPressed: () {},
           child: Center(child: Icon(Icons.add, color: Colors.white, size: 32)),
         ),
-        bottomNavigationBar: CustomBottomAppBar(),
+        bottomNavigationBar: CustomBottomAppBar(
+          onTap: (int index) {
+            setState(() {
+              currentIndex = index;
+            });
+          },
+          currentIndex: currentIndex,
+        ),
         body: SafeArea(child: HomeViewBody()),
       ),
     );
