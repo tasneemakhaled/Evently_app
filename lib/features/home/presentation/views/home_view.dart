@@ -1,6 +1,12 @@
 import 'package:evently_app/core/utils/constants.dart';
+import 'package:evently_app/features/Favourites/presentation/views/favourites_view.dart';
+import 'package:evently_app/features/Favourites/presentation/views/widgets/favourites_view_body.dart';
+import 'package:evently_app/features/Maps/presentation/views/maps_view.dart';
+import 'package:evently_app/features/Maps/presentation/views/widgets/maps_view_body.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/custom_bottom_app_bar.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/home_view_body.dart';
+import 'package:evently_app/features/profile/presentation/views/profile_view.dart';
+import 'package:evently_app/features/profile/presentation/views/widgets/profile_view_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -13,6 +19,12 @@ class HomeView extends StatefulWidget {
 
 class _HomeViewState extends State<HomeView> {
   int currentIndex = 0;
+  List<Widget> views = [
+    HomeViewBody(),
+    MapsViewBody(),
+    FavouritesViewBody(),
+    ProfileViewBody(),
+  ];
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -35,7 +47,7 @@ class _HomeViewState extends State<HomeView> {
           },
           currentIndex: currentIndex,
         ),
-        body: SafeArea(child: HomeViewBody()),
+        body: SafeArea(child: views[currentIndex]),
       ),
     );
   }

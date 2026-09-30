@@ -26,18 +26,20 @@ class CustomBottomAppBar extends StatelessWidget {
 
             text: 'home',
             widget: currentIndex == 0
-                ? Icon(Icons.home, color: Colors.white)
-                : Icon(Icons.home_outlined, color: Colors.white),
+                ? Icon(Icons.home, color: Colors.white, size: 24)
+                : Icon(Icons.home_outlined, color: Colors.white, size: 24),
           ),
           CustomNavItem(
             onTap: () => onTap(1),
             text: 'map',
             widget: currentIndex == 1
                 ? ImageIcon(
+                    size: 24,
                     AssetImage(Assets.assetsImagesMapPinFilled),
                     color: Colors.white,
                   )
                 : ImageIcon(
+                    size: 24,
                     AssetImage(Assets.assetsImagesMapPinOutlined),
                     color: Colors.white,
                   ),
@@ -47,15 +49,15 @@ class CustomBottomAppBar extends StatelessWidget {
             onTap: () => onTap(2),
             text: 'love',
             widget: currentIndex == 2
-                ? Icon(Icons.favorite, color: Colors.white)
-                : Icon(Icons.favorite_outline, color: Colors.white),
+                ? Icon(Icons.favorite, color: Colors.white, size: 24)
+                : Icon(Icons.favorite_outline, color: Colors.white, size: 24),
           ),
           CustomNavItem(
             onTap: () => onTap(3),
             text: 'profile',
             widget: currentIndex == 3
-                ? Icon(Icons.person, color: Colors.white)
-                : Icon(Icons.person_outline, color: Colors.white),
+                ? Icon(Icons.person, color: Colors.white, size: 24)
+                : Icon(Icons.person_outline, color: Colors.white, size: 24),
           ),
         ],
       ),
