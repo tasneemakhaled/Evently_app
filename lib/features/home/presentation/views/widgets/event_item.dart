@@ -7,6 +7,6 @@ class EventItem extends StatelessWidget {
   final EventModel eventModel;
   @override
   Widget build(BuildContext context) {
-    return Stack(children: []);
+    return Stack(children: [Image.asset(Assets.assetsImagesBirthday)]);
   }
 }

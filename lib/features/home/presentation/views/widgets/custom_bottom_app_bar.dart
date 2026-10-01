@@ -1,6 +1,5 @@
 import 'package:evently_app/core/utils/app_images.dart';
 import 'package:evently_app/core/utils/constants.dart';
-import 'package:evently_app/features/home/presentation/views/home_view.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/custom_nav_item.dart';
 import 'package:flutter/material.dart';
 

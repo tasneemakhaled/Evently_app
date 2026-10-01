@@ -3,7 +3,6 @@ import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/core/widgets/custom_app_bar.dart';
 import 'package:evently_app/features/auth/presentation/views/login_view.dart';
-import 'package:evently_app/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:evently_app/features/onboarding/presentation/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -44,9 +43,9 @@ class WelcomeViewBody extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    Image.asset(Assets.assetsImagesLR),
+                    Image.asset(Assets.assetsImagesLr),
                     SizedBox(width: 16),
-                    Image.asset(Assets.assetsImagesEG),
+                    Image.asset(Assets.assetsImagesEg),
                   ],
                 ),
               ),

@@ -87,9 +87,9 @@ class LoginViewBody extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Image.asset(Assets.assetsImagesLR),
+                Image.asset(Assets.assetsImagesLr),
                 SizedBox(width: 16),
-                Image.asset(Assets.assetsImagesEG),
+                Image.asset(Assets.assetsImagesEg),
               ],
             ),
           ),
