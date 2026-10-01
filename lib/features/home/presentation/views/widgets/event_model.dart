@@ -1,7 +1,13 @@
 class EventModel {
-  final String image;
   final String title;
+  final String image;
+  final String subTitle;
   final String date;
 
-  EventModel({required this.image, required this.title, required this.date});
+  EventModel({
+    required this.image,
+    required this.title,
+    required this.date,
+    required this.subTitle,
+  });
 }
