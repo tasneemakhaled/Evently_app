@@ -1,3 +1,4 @@
+import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/event_model.dart';
 import 'package:flutter/material.dart';
@@ -35,13 +36,14 @@ class EventItem extends StatelessWidget {
           Positioned(
             left: 120,
             top: 20,
-            child: Image.asset(eventModel.image, height: 180, width: 180),
+            child: Image.asset(eventModel.image, height: 170, width: 170),
           ),
           Positioned(
             bottom: 10,
             left: 5,
             right: 5,
             child: Container(
+              padding: EdgeInsets.all(8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
                 color: Color(0xffF2FEFF),
@@ -59,13 +61,27 @@ class EventItem extends StatelessWidget {
             top: 6,
             left: 6,
             child: Container(
-              height: 50,
-              width: 50,
+              padding: EdgeInsets.symmetric(horizontal: 4),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(8),
               ),
-              child: Center(child: Text(eventModel.date)),
+              child: Column(
+                children: [
+                  Text(
+                    eventModel.num,
+                    style: AppTextStyles.font20Bold.copyWith(
+                      color: primaryColor,
+                    ),
+                  ),
+                  Text(
+                    eventModel.month,
+                    style: AppTextStyles.font20Bold.copyWith(
+                      color: primaryColor,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
