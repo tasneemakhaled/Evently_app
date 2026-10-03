@@ -20,19 +20,27 @@ class EventItem extends StatelessWidget {
             ),
           ),
           Positioned(
+            bottom: 14,
+            left: 45,
+            top: 50,
             child: Text(
               eventModel.title,
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 60,
+                fontSize: 70,
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
           Positioned(
-            child: Image.asset(eventModel.image, height: 100, width: 100),
+            left: 120,
+            top: 20,
+            child: Image.asset(eventModel.image, height: 180, width: 180),
           ),
           Positioned(
+            bottom: 10,
+            left: 5,
+            right: 5,
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
@@ -48,11 +56,16 @@ class EventItem extends StatelessWidget {
             ),
           ),
           Positioned(
+            top: 6,
+            left: 6,
             child: Container(
+              height: 50,
+              width: 50,
               decoration: BoxDecoration(
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
               ),
-              child: Text(eventModel.date),
+              child: Center(child: Text(eventModel.date)),
             ),
           ),
         ],

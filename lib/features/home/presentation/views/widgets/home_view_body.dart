@@ -12,6 +12,7 @@ class HomeViewBody extends StatelessWidget {
     return Column(
       children: [
         HomeHeader(),
+        SizedBox(height: 10),
         EventItem(
           eventModel: EventModel(
             title: 'Birthday',
