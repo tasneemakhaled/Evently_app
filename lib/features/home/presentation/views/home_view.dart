@@ -1,4 +1,5 @@
 import 'package:evently_app/core/utils/constants.dart';
+import 'package:evently_app/features/Events/presentation/views/create_event_view.dart';
 import 'package:evently_app/features/Favourites/presentation/views/widgets/favourites_view_body.dart';
 import 'package:evently_app/features/Maps/presentation/views/widgets/maps_view_body.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/custom_bottom_app_bar.dart';
@@ -33,7 +34,9 @@ class _HomeViewState extends State<HomeView> {
             side: BorderSide(color: Color(0xffF2FEFF), width: 5),
           ),
           backgroundColor: primaryColor,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pushNamed(CreateEventView.route);
+          },
           child: Center(child: Icon(Icons.add, color: Colors.white, size: 32)),
         ),
         bottomNavigationBar: CustomBottomAppBar(
