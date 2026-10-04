@@ -3,20 +3,26 @@ import 'package:evently_app/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomTabBar extends StatelessWidget {
-  const CustomTabBar({super.key});
-
+  const CustomTabBar({
+    super.key,
+    required this.indicatorColor,
+    required this.labelColor,
+    required this.borderColor,
+    required this.unselectedLabelColor,
+  });
+  final Color indicatorColor, labelColor, borderColor, unselectedLabelColor;
   @override
   Widget build(BuildContext context) {
     return TabBar(
       labelPadding: EdgeInsets.symmetric(horizontal: 8),
       indicatorPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      labelColor: primaryColor,
-      unselectedLabelColor: Colors.white,
+      labelColor: labelColor,
+      unselectedLabelColor: unselectedLabelColor,
       tabAlignment: TabAlignment.start,
       indicatorSize: TabBarIndicatorSize.tab,
       dividerColor: Colors.transparent,
       indicator: BoxDecoration(
-        color: Colors.white,
+        color: indicatorColor,
         borderRadius: BorderRadius.circular(24),
       ),
       isScrollable: true,
@@ -25,7 +31,7 @@ class CustomTabBar extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.white),
+              border: Border.all(color: borderColor),
               borderRadius: BorderRadius.circular(24),
             ),
             child: Row(
@@ -43,7 +49,7 @@ class CustomTabBar extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.white),
+              border: Border.all(color: borderColor),
               borderRadius: BorderRadius.circular(24),
             ),
             child: Row(
@@ -61,7 +67,7 @@ class CustomTabBar extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.white),
+              border: Border.all(color: borderColor),
               borderRadius: BorderRadius.circular(24),
             ),
             child: Row(
@@ -79,7 +85,7 @@ class CustomTabBar extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.white),
+              border: Border.all(color: borderColor),
               borderRadius: BorderRadius.circular(24),
             ),
             child: Row(

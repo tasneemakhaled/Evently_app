@@ -6,6 +6,9 @@ class CreateEventView extends StatelessWidget {
   static const route = 'create event ';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: CreateEventViewBody());
+    return DefaultTabController(
+      length: 4,
+      child: Scaffold(body: CreateEventViewBody()),
+    );
   }
 }

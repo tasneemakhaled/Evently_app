@@ -63,7 +63,12 @@ class HomeHeader extends StatelessWidget {
               ),
             ],
           ),
-          CustomTabBar(),
+          CustomTabBar(
+            indicatorColor: Colors.white,
+            labelColor: primaryColor,
+            borderColor: Colors.white,
+            unselectedLabelColor: Colors.white,
+          ),
         ],
       ),
     );
