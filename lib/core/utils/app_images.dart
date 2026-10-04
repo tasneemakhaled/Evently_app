@@ -26,9 +26,17 @@ class Assets {
   /// assets/images/book_open_outlined.png
   static const String assetsImagesBookOpenOutlined = "assets/images/book_open_outlined.png";
 
+  /// Assets for assetsImagesCalendarDays
+  /// assets/images/Calendar_Days.png
+  static const String assetsImagesCalendarDays = "assets/images/Calendar_Days.png";
+
   /// Assets for assetsImagesChangeSetting
   /// assets/images/change_setting.png
   static const String assetsImagesChangeSetting = "assets/images/change_setting.png";
+
+  /// Assets for assetsImagesClock
+  /// assets/images/Clock.png
+  static const String assetsImagesClock = "assets/images/Clock.png";
 
   /// Assets for assetsImagesCompassFilled
   /// assets/images/compass_filled.png
@@ -70,6 +78,10 @@ class Assets {
   /// assets/images/knowledge.png
   static const String assetsImagesKnowledge = "assets/images/knowledge.png";
 
+  /// Assets for assetsImagesLocation
+  /// assets/images/location.png
+  static const String assetsImagesLocation = "assets/images/location.png";
+
   /// Assets for assetsImagesLogo
   /// assets/images/logo.png
   static const String assetsImagesLogo = "assets/images/logo.png";
@@ -89,6 +101,10 @@ class Assets {
   /// Assets for assetsImagesMoon
   /// assets/images/moon.png
   static const String assetsImagesMoon = "assets/images/moon.png";
+
+  /// Assets for assetsImagesNoteEdit
+  /// assets/images/Note_Edit.png
+  static const String assetsImagesNoteEdit = "assets/images/Note_Edit.png";
 
   /// Assets for assetsImagesNotification
   /// assets/images/notification.png
@@ -125,5 +141,5 @@ class Assets {
   /// Assets for assetsImagesTechie
   /// assets/images/techie.png
   static const String assetsImagesTechie = "assets/images/techie.png";
-
 }
+
