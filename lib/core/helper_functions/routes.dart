@@ -1,4 +1,5 @@
 import 'package:evently_app/features/Events/presentation/views/create_event_view.dart';
+import 'package:evently_app/features/Events/presentation/views/edit_event_view.dart';
 import 'package:evently_app/features/Events/presentation/views/events_details_view.dart';
 import 'package:evently_app/features/auth/presentation/views/forget_password_view.dart';
 import 'package:evently_app/features/auth/presentation/views/login_view.dart';
@@ -28,6 +29,8 @@ class Routes {
         return MaterialPageRoute(builder: (context) => CreateEventView());
       case EventsDetailsView.route:
         return MaterialPageRoute(builder: (context) => EventsDetailsView());
+      case EditEventView.route:
+        return MaterialPageRoute(builder: (context) => EditEventView());
       default:
         return MaterialPageRoute(builder: (context) => SplashView());
     }
