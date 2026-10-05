@@ -1,3 +1,4 @@
+import 'package:evently_app/features/Events/presentation/views/events_details_view.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/event_item.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/event_model.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,13 @@ class EventsListView extends StatelessWidget {
       itemBuilder: (context, index) {
         return Column(
           children: [
-            EventItem(eventModel: eventModel),
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed(EventsDetailsView.route);
+              },
+
+              child: EventItem(eventModel: eventModel),
+            ),
             SizedBox(height: 10),
           ],
         );

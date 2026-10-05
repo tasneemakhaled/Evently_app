@@ -46,6 +46,14 @@ class Assets {
   /// assets/images/compass_outlined.png
   static const String assetsImagesCompassOutlined = "assets/images/compass_outlined.png";
 
+  /// Assets for assetsImagesDelete
+  /// assets/images/delete.png
+  static const String assetsImagesDelete = "assets/images/delete.png";
+
+  /// Assets for assetsImagesEditAppBar
+  /// assets/images/edit_app_bar.png
+  static const String assetsImagesEditAppBar = "assets/images/edit_app_bar.png";
+
   /// Assets for assetsImagesEg
   /// assets/images/eg.png
   static const String assetsImagesEg = "assets/images/eg.png";

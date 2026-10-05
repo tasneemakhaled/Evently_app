@@ -12,19 +12,21 @@ class CreateEventViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16),
-      child: Column(
-        children: [
-          EventCard(),
-          SizedBox(height: 15),
-          CustomTabBar(
-            indicatorColor: primaryColor,
-            labelColor: Colors.white,
-            borderColor: primaryColor,
-            unselectedLabelColor: primaryColor,
-          ),
-          SizedBox(height: 15),
-          EventForm(),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            EventCard(),
+            SizedBox(height: 15),
+            CustomTabBar(
+              indicatorColor: primaryColor,
+              labelColor: Colors.white,
+              borderColor: primaryColor,
+              unselectedLabelColor: primaryColor,
+            ),
+            SizedBox(height: 15),
+            EventForm(),
+          ],
+        ),
       ),
     );
   }
