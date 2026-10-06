@@ -23,7 +23,7 @@ class CreateEventViewBody extends StatelessWidget {
               borderColor: primaryColor,
               unselectedLabelColor: primaryColor,
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 10),
             EventForm(),
           ],
         ),
