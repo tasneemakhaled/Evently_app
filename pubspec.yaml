@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_localization: ^0.4.1
   flutter_map: ^8.3.2
   flutter_native_splash: ^2.4.7
   flutter_svg: ^2.3.0
@@ -94,3 +95,5 @@ flutter_assets:
   output_path: lib/core/utils
   filename: app_images.dart
   # field_prefix: AppImages
+flutter_intl:
+  enabled: true
