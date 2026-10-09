@@ -1,12 +1,21 @@
 import 'package:evently_app/core/helper_functions/routes.dart';
+import 'package:evently_app/core/utils/app_provider.dart';
 import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:provider/provider.dart';
 import 'generated/l10n.dart';
 
 void main() {
-  runApp(const EventlyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (BuildContext context) {
+        return AppProvider();
+      },
+      child: const EventlyApp(),
+    ),
+  );
 }
 
 class EventlyApp extends StatelessWidget {
@@ -14,7 +23,10 @@ class EventlyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<AppProvider>();
     return MaterialApp(
+      locale: provider.locale,
+      themeMode: provider.themeMode,
       localizationsDelegates: [
         S.delegate,
         GlobalMaterialLocalizations.delegate,

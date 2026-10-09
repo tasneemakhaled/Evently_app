@@ -1,10 +1,12 @@
 import 'package:evently_app/core/utils/app_images.dart';
+import 'package:evently_app/core/utils/app_provider.dart';
 import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/core/widgets/custom_app_bar.dart';
 import 'package:evently_app/features/auth/presentation/views/login_view.dart';
 import 'package:evently_app/features/onboarding/presentation/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class WelcomeViewBody extends StatelessWidget {
   const WelcomeViewBody({super.key});
@@ -43,7 +45,12 @@ class WelcomeViewBody extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    Image.asset(Assets.assetsImagesLr),
+                    GestureDetector(
+                      onTap: () {
+                        context.read<AppProvider>().changeLanguage('ar');
+                      },
+                      child: Image.asset(Assets.assetsImagesLr),
+                    ),
                     SizedBox(width: 16),
                     Image.asset(Assets.assetsImagesEg),
                   ],
