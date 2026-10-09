@@ -2,6 +2,7 @@ import 'package:evently_app/core/utils/app_images.dart';
 import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class GoogleLogin extends StatelessWidget {
   const GoogleLogin({super.key});
@@ -21,7 +22,7 @@ class GoogleLogin extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(Assets.assetsImagesGoogle, height: 25, width: 25),
-          Text('  Login With Google', style: AppTextStyles.font20Medium),
+          Text('  ${S.of(context).loginWithGoogle}', style: AppTextStyles.font20Medium),
         ],
       ),
     );

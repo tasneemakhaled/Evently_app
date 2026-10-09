@@ -3,6 +3,7 @@ import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/onboarding/presentation/views/welcome_view.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -32,7 +33,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
         Align(
           alignment: Alignment.center,
           child: Text(
-            'Evently',
+            S.of(context).appName,
             style: AppTextStyles.font36Regular.copyWith(color: primaryColor),
           ),
         ),

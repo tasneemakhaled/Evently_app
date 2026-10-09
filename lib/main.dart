@@ -1,6 +1,7 @@
 import 'package:evently_app/core/helper_functions/routes.dart';
 import 'package:evently_app/core/utils/app_provider.dart';
 import 'package:evently_app/core/utils/app_text_styles.dart';
+import 'package:evently_app/core/utils/app_themes.dart';
 import 'package:evently_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -25,6 +26,8 @@ class EventlyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = context.watch<AppProvider>();
     return MaterialApp(
+      theme: AppThemes.light,
+      darkTheme: AppThemes.dark,
       locale: provider.locale,
       themeMode: provider.themeMode,
       localizationsDelegates: [
@@ -35,7 +38,7 @@ class EventlyApp extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: AppTextStyles.fontFamily),
+
       onGenerateRoute: Routes.onGenerateRoute,
 
       initialRoute: SplashView.route,

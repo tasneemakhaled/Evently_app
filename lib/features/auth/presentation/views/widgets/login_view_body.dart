@@ -9,6 +9,7 @@ import 'package:evently_app/features/auth/presentation/views/widgets/google_logi
 import 'package:evently_app/features/home/presentation/views/home_view.dart';
 import 'package:evently_app/features/onboarding/presentation/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -22,12 +23,12 @@ class LoginViewBody extends StatelessWidget {
           Image.asset(Assets.assetsImagesLogo),
           Image.asset(Assets.assetsImagesEvently),
           CustomTextField(
-            hintText: 'Email',
+            hintText: S.of(context).email,
             prefixIcon: Icon(Icons.email, color: Color(0xff7B7B7B)),
           ),
           SizedBox(height: 10),
           CustomPasswordField(
-            hintText: 'password',
+            hintText: S.of(context).password,
             prefixIcon: Icon(Icons.lock, color: Color(0xff7B7B7B)),
             suffixIcon: Icon(Icons.visibility, color: Color(0xff7B7B7B)),
           ),
@@ -38,7 +39,7 @@ class LoginViewBody extends StatelessWidget {
                 Navigator.of(context).pushNamed(ForgetPasswordView.route);
               },
               child: Text(
-                'Forget Password?',
+                S.of(context).forgetPasswordQuestion,
                 style: AppTextStyles.font16Bold.copyWith(color: primaryColor),
               ),
             ),
@@ -47,18 +48,18 @@ class LoginViewBody extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).pushNamed(HomeView.route);
             },
-            text: 'Login',
+            text: S.of(context).login,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Don’t Have Account ?', style: AppTextStyles.font16Medium),
+              Text(S.of(context).noAccountQuestion, style: AppTextStyles.font16Medium),
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).pushNamed(SignUpView.route);
                 },
                 child: Text(
-                  ' Create Account',
+                  ' ${S.of(context).createAccount}',
                   style: AppTextStyles.font16Medium.copyWith(
                     color: primaryColor,
                   ),
@@ -70,7 +71,7 @@ class LoginViewBody extends StatelessWidget {
             children: [
               Expanded(child: Divider(color: primaryColor)),
               Text(
-                '   Or   ',
+                '   ${S.of(context).or}   ',
                 style: AppTextStyles.font16Medium.copyWith(color: primaryColor),
               ),
               Expanded(child: Divider(color: primaryColor)),

@@ -4,6 +4,7 @@ import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/Events/presentation/views/edit_event_view.dart';
 import 'package:evently_app/features/Events/presentation/views/widgets/events_details_view_body.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class EventsDetailsView extends StatelessWidget {
   const EventsDetailsView({super.key});
@@ -14,7 +15,7 @@ class EventsDetailsView extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'Event Details',
+          S.of(context).eventDetails,
           style: AppTextStyles.font16Regular.copyWith(color: primaryColor),
         ),
         actions: [

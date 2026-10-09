@@ -1,6 +1,7 @@
 import 'package:evently_app/core/utils/app_images.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class CustomTabBar extends StatelessWidget {
   const CustomTabBar({
@@ -38,7 +39,7 @@ class CustomTabBar extends StatelessWidget {
               children: [
                 ImageIcon(AssetImage(Assets.assetsImagesCompassFilled)),
                 Text(
-                  '  All',
+                  '  ${S.of(context).categoryAll}',
                   // style: AppTextStyles.font16Medium.copyWith(color: Colors.white),
                 ),
               ],
@@ -56,7 +57,7 @@ class CustomTabBar extends StatelessWidget {
               children: [
                 ImageIcon(AssetImage(Assets.assetsImagesBikeFilled)),
                 Text(
-                  '  Sport',
+                  '  ${S.of(context).categorySport}',
                   // style: AppTextStyles.font16Medium.copyWith(color: Colors.white),
                 ),
               ],
@@ -74,7 +75,7 @@ class CustomTabBar extends StatelessWidget {
               children: [
                 ImageIcon(AssetImage(Assets.assetsImagesBirthdayFilled)),
                 Text(
-                  '  Birthday',
+                  '  ${S.of(context).categoryBirthday}',
                   // style: AppTextStyles.font16Medium.copyWith(color: Colors.white),
                 ),
               ],
@@ -92,7 +93,7 @@ class CustomTabBar extends StatelessWidget {
               children: [
                 ImageIcon(AssetImage(Assets.assetsImagesBookOpenFilled)),
                 Text(
-                  '  Book Club',
+                  '  ${S.of(context).categoryBookClub}',
                   // style: AppTextStyles.font16Medium.copyWith(color: Colors.white),
                 ),
               ],

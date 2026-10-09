@@ -1,6 +1,7 @@
 import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/features/Events/presentation/views/widgets/edit_event_view_body.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class EditEventView extends StatelessWidget {
   const EditEventView({super.key});
@@ -12,7 +13,7 @@ class EditEventView extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text('Edit Event', style: AppTextStyles.font16Medium),
+          title: Text(S.of(context).editEvent, style: AppTextStyles.font16Medium),
         ),
         body: EditEventViewBody(),
       ),

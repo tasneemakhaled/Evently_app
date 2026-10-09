@@ -4,6 +4,7 @@ import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/auth/presentation/views/widgets/custom_text_field.dart';
 import 'package:evently_app/features/onboarding/presentation/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class EventForm extends StatelessWidget {
   const EventForm({super.key});
@@ -13,20 +14,20 @@ class EventForm extends StatelessWidget {
     return Column(
       children: [
         CustomTextField(
-          hintText: 'Event Title',
+          hintText: S.of(context).eventTitle,
           prefixIcon: ImageIcon(AssetImage(Assets.assetsImagesNoteEdit)),
         ),
         SizedBox(height: 10),
-        CustomTextField(hintText: 'Event Description', maxLines: 5),
+        CustomTextField(hintText: S.of(context).eventDescription, maxLines: 5),
         SizedBox(height: 10),
         Row(
           children: [
             Image.asset(Assets.assetsImagesCalendarDays),
             SizedBox(width: 4),
-            Text('Event Date'),
+            Text(S.of(context).eventDate),
             Spacer(),
             Text(
-              'Choose Date',
+              S.of(context).chooseDate,
               style: AppTextStyles.font16Medium.copyWith(color: primaryColor),
             ),
           ],
@@ -36,10 +37,10 @@ class EventForm extends StatelessWidget {
           children: [
             Image.asset(Assets.assetsImagesClock),
             SizedBox(width: 4),
-            Text('Event Time'),
+            Text(S.of(context).eventTime),
             Spacer(),
             Text(
-              'Choose Time',
+              S.of(context).chooseTime,
               style: AppTextStyles.font16Medium.copyWith(color: primaryColor),
             ),
           ],
@@ -47,7 +48,7 @@ class EventForm extends StatelessWidget {
         SizedBox(height: 10),
         Align(
           alignment: Alignment.topLeft,
-          child: Text('Location', style: AppTextStyles.font16Medium),
+          child: Text(S.of(context).location, style: AppTextStyles.font16Medium),
         ),
         SizedBox(height: 10),
         Container(
@@ -72,7 +73,7 @@ class EventForm extends StatelessWidget {
                 ),
               ),
               Text(
-                'Choose Event Location',
+                S.of(context).chooseEventLocation,
                 style: AppTextStyles.font16Medium.copyWith(color: primaryColor),
               ),
               Spacer(),
@@ -87,7 +88,7 @@ class EventForm extends StatelessWidget {
             ],
           ),
         ),
-        CustomButton(onPressed: () {}, text: 'Add Event'),
+        CustomButton(onPressed: () {}, text: S.of(context).addEvent),
       ],
     );
   }

@@ -5,6 +5,7 @@ import 'package:evently_app/features/auth/presentation/views/widgets/custom_text
 import 'package:evently_app/features/home/presentation/views/widgets/event_model.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/events_list_view.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class FavouritesViewBody extends StatelessWidget {
   const FavouritesViewBody({super.key});
@@ -16,7 +17,7 @@ class FavouritesViewBody extends StatelessWidget {
       child: Column(
         children: [
           CustomTextField(
-            hintText: 'Search For Event',
+            hintText: S.of(context).searchForEvent,
             prefixIcon: Icon(Icons.search, color: primaryColor),
           ),
           SizedBox(height: 10),

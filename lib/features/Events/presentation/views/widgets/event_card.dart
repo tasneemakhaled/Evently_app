@@ -1,5 +1,6 @@
 import 'package:evently_app/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class EventCard extends StatelessWidget {
   const EventCard({super.key});
@@ -19,7 +20,7 @@ class EventCard extends StatelessWidget {
             left: 40,
             top: 60,
             child: Text(
-              'Book Club',
+              S.of(context).categoryBookClub,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 60,

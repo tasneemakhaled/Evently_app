@@ -3,6 +3,7 @@ import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/Events/presentation/views/widgets/event_card.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class EventsDetailsViewBody extends StatelessWidget {
   const EventsDetailsViewBody({super.key});
@@ -110,7 +111,7 @@ class EventsDetailsViewBody extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.topLeft,
-              child: Text('Description', style: AppTextStyles.font16Medium),
+              child: Text(S.of(context).description, style: AppTextStyles.font16Medium),
             ),
             Text(
               'Lorem ipsum dolor sit amet consectetur. Vulputate eleifend suscipit eget neque senectus a. Nulla at non malesuada odio duis lectus amet nisi sit. Risus hac enim maecenas auctor et. At cras massa diam porta facilisi lacus purus. Iaculis eget quis ut amet. Sit ac malesuada nisi quis  feugiat.',

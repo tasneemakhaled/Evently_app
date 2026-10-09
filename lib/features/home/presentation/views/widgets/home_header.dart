@@ -3,6 +3,7 @@ import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/home/presentation/views/widgets/custom_tab_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});
@@ -24,7 +25,7 @@ class HomeHeader extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Welcome Back ✨',
+                '${S.of(context).welcomeBack} ✨',
                 style: AppTextStyles.font14Regular.copyWith(
                   color: Colors.white,
                 ),
@@ -41,7 +42,7 @@ class HomeHeader extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text(
-                    'EN',
+                    S.of(context).languageCode,
                     style: AppTextStyles.font14Bold.copyWith(
                       color: primaryColor,
                     ),

@@ -2,6 +2,7 @@ import 'package:evently_app/core/utils/app_text_styles.dart';
 import 'package:evently_app/core/utils/constants.dart';
 import 'package:evently_app/features/auth/presentation/views/widgets/sign_up_view_body.dart';
 import 'package:flutter/material.dart';
+import 'package:evently_app/generated/l10n.dart';
 
 class SignUpView extends StatelessWidget {
   const SignUpView({super.key});
@@ -12,7 +13,7 @@ class SignUpView extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'Register',
+          S.of(context).register,
           style: AppTextStyles.font16Regular.copyWith(color: primaryColor),
         ),
       ),
